@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/teal_200"
+            app:shapeAppearanceOverlay="@style/circle"/>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tv_theme"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_rounded_note"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:text="Mavzu"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jeghwbv wkvbweipvev lewvceb9ewbif ewfweljqgrforqel clqeb"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/tv_edit"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="left"
+               android:text="Edit"
+               android:textSize="16sp"
+               android:paddingRight="10dp"
+               android:textColor="#03A9F4"/>
+
+           <TextView
+               android:id="@+id/tv_delete"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="Delete"
+               android:textSize="16sp"
+               android:paddingRight="10dp"
+               android:textColor="#03A9F4"/>
+
+           <TextView
+               android:id="@+id/tv_time"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="right"
+               android:text="2004 05 21"
+               android:textSize="16sp"
+               android:paddingRight="10dp"
+               android:textColor="#03A9F4"/>
+       </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/teal_200"/>
+</LinearLayout>
